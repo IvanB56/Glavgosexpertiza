@@ -1,0 +1,72 @@
+.pageWidth {
+  width: min(1140px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.siteHeader {
+  background: #112740;
+  color: var(--white);
+}
+
+.siteBrand {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.brandIcon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #214469;
+  color: #d4e7ff;
+}
+
+.brandIcon svg {
+  width: 23px;
+  height: 23px;
+}
+
+.main {
+  padding-block: 42px 32px;
+}
+
+.intro {
+  margin-bottom: 26px;
+}
+
+.eyebrow {
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.description {
+  margin-top: 12px;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 540px) {
+  .pageWidth {
+    width: calc(100% - 28px);
+  }
+
+  .main {
+    padding-top: 28px;
+  }
+}

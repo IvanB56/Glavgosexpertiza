@@ -1,0 +1,9 @@
+services:
+  frontend:
+    build: .
+    ports:
+      - "127.0.0.1:5173:5173"
+    init: true
+    volumes:
+      - ./src:/app/src:ro
+      - ./index.html:/app/index.html:ro

@@ -1,0 +1,34 @@
+.field {
+  width: min(100%, 370px);
+}
+
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 650;
+  font-size: 14px;
+}
+
+.control {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  color: var(--ink-muted);
+}
+
+.input {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid #b9cadc;
+  border-radius: 7px;
+  padding: 8px 12px 8px 38px;
+  color: inherit;
+  background: var(--white);
+}

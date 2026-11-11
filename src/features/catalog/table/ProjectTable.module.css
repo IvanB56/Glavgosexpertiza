@@ -1,0 +1,80 @@
+.viewport {
+  max-height: clamp(248px, 52vh, 590px);
+  overflow: auto;
+  overflow-anchor: none;
+  border-radius: 0 0 14px 14px;
+}
+
+.viewport:focus-visible {
+  outline-offset: -2px;
+}
+
+.table {
+  width: 100%;
+  min-width: 940px;
+  table-layout: fixed;
+  border-spacing: 0;
+  font-size: 14px;
+}
+
+.spacerCell {
+  padding: 0;
+  border: 0;
+}
+
+.headerCell {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0 18px;
+  border-bottom: 1px solid var(--line);
+  background: #edf3fa;
+  color: #405875;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.row:hover {
+  background: #f5f9fe;
+}
+
+.cell {
+  padding: 0 18px;
+  border-bottom: 1px solid #e8eef5;
+  text-align: left;
+}
+
+.cell[data-field='id'] {
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.cell[data-field='title'] {
+  font-weight: 600;
+}
+
+.cellText {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.5;
+}
+
+.cell[data-field='status'] .cellText {
+  width: fit-content;
+  max-width: 100%;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: #edf3fb;
+  color: #294e78;
+}
+
+.highlight {
+  padding-inline: 1px;
+  border-radius: 2px;
+  background: #ffe391;
+  color: #332700;
+}

@@ -1,0 +1,32 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #152740;
+  background: #f1f5fa;
+  font-synthesis: none;
+  color-scheme: light;
+  --ink-muted: #50647d;
+  --line: #dbe4ee;
+  --accent: #1559a8;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button, input {
+  font: inherit;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
